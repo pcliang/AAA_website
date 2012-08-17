@@ -1,5 +1,11 @@
 AAAWebsite::Application.routes.draw do
 
+  resources :comments
+
+  devise_for :users
+
+   resources :events
+
   # Maps get request for the URI "aaa_core/index" to the "index" action of the "AaaCore" controller
   #get "aaa_core/index"
 
@@ -59,7 +65,8 @@ AAAWebsite::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'aaa_core#index'
-  match '/events',:to => 'aaa_core#events'
+  # to use Active Record, we need to strip out the /events route in routes.rb
+  # match '/events',:to => 'aaa_core#events'
   match '/shop', :to => 'aaa_core#shop'
   match '/discussion', :to => 'aaa_core#discussion'
 

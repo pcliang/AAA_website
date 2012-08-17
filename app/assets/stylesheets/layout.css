@@ -1,0 +1,25 @@
+/* Basic styling for the static pages */
+
+div#container {
+    display: block;
+    position: relative;
+    min-height: 1000px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #808000;
+}
+
+header#page_header {
+    background-color: #008000;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 15px;
+}
+
+nav#utility {
+    float: right;
+    font-size: 1em;
+}
+
+

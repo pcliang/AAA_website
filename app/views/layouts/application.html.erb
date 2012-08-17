@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title><%= title %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -8,10 +9,17 @@
 </head>
 <body>
 
-  <%= render 'layouts/header' %>
-  <%= render 'layouts/navigation' %>
-  <%= yield %>
+  <div id="container">
+    <%= render 'layouts/header' %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= render 'layouts/navigation' %>
+
+    <%= yield %>
   <%= render 'layouts/footer' %>
+  </div>
 
 </body>
 </html>

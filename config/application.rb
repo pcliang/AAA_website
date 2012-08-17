@@ -44,5 +44,8 @@ module AAAWebsite
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # added on 14 Aug 2012 for using 'devise' gem on Rails 3.1 platform
+    #config.assets.initialize_on_precompile = false
   end
 end
