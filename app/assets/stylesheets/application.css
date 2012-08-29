@@ -6,4 +6,5 @@
  *= require normalize
  *= require layout
  *= require navigation
+ *= require events
 */

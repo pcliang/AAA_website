@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_filter :require_authentication, :except => [:index, :show]
+  before_filter :require_authentication, :except => [:-, :show]
   # GET /events
   # GET /events.json
   def index

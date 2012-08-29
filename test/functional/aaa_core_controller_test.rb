@@ -2,7 +2,7 @@ require 'test_helper'
 
 class AaaCoreControllerTest < ActionController::TestCase
   test "should get index" do
-    get :index
+    get :-
     assert_response :success
   end
 
